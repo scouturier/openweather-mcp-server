@@ -62,7 +62,7 @@ To use this server with MCP clients, add the following configuration to your `mc
 {
   "servers": [
     {
-      "name": "openweather",
+      "name": "openweather-mcp-server",
       "command": "python /path/to/openweather-mcp-server/openweather_server_cli.py",
       "transport": "stdio"
     }
