@@ -27,8 +27,8 @@ git clone <repository-url>
 cd openweather-mcp-server
 
 # Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
 
 # Install the package in development mode
 pip install -e .
