@@ -54,6 +54,24 @@ python openweather_server_cli.py
 python openweather_server_cli.py --sse --port 8888
 ```
 
+### MCP Configuration
+
+To use this server with MCP clients, add the following configuration to your `mcp.json` file:
+
+```json
+{
+  "servers": [
+    {
+      "name": "openweather",
+      "command": "python /path/to/openweather-mcp-server/openweather_server_cli.py",
+      "transport": "stdio"
+    }
+  ]
+}
+```
+
+Replace `/path/to/openweather-mcp-server` with the actual path to your installation.
+
 ### Environment Variables
 
 - `FASTMCP_LOG_LEVEL`: Set the logging level (default: WARNING)
